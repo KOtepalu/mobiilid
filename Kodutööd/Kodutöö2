@@ -1,0 +1,66 @@
+Mille jaoks kasutatakse?
+mobiili äpid, desktop äpid, mängud, VR jne. Pigem windowsi kasutajate jaoks 
+
+Mis keeltega sarnane on?
+JavaScript, Java, C, C++ (objektorienteeritud keel)
+
+Kuidas erineb teistest keeltest?
+JAVA VS C#: 
+Platvormisõltuvus:
+C#: Peamiselt kasutatakse Microsofti ökosüsteemis ja on tihedalt seotud .NET raamistikuga. Seda kasutatakse peamiselt Windowsi rakenduste jaoks, kuid koos .NET Core'i ja hilisemate versioonidega on ristplatvormi arendus muutunud teostatavamaks.
+Java: Tuntud oma platvormist sõltumatuse poolest. Java rakendused saavad töötada igal seadmel, kus on Java virtuaalmasin (JVM), muutes selle väga liikuvaks erinevate operatsioonisüsteemide vahel.
+Arenduskeskkonnad:
+C#: Arendatud peamiselt Visual Studioga, eelistatud integreeritud arenduskeskkonna (IDE) kasutamine, kuigi on olemas ka alternatiive.
+Java: On mitmeid IDE-sid, kusjuures Eclipse, IntelliJ IDEA ja NetBeans on kõige populaarsemate valikute hulgas.
+Mäluhaldus:
+C#: Kasutab automaatset mäluhaldust läbi .NET runtime'i prügikoguja.
+Java: Kasutab samuti automaatset mäluhaldust JVM-i prügikoguja abil.
+Keele omadused:
+C#: Omab omadusi(properties), indekseid, sündmusi. Toetab ka LINQ (Language-Integrated Query) andmete päringuteks.
+Java: Puuduvad mõned C#-s leiduvad tunnused, näiteks omadused, kuid omab omakorda oma  komplekti, näiteks kontrollitud erandid ja ulatuslikum standardteek.
+Keele süntaks:
+C#: Süntaks on mõjutatud C ja C++-st, kuid sisaldab kaasaegseid omadusi. Omab ulatuslikku atribuutide ja omaduste kasutamist.
+Java: Süntaks on sarnane C++-le, kuid on kavandatud olema lihtsam ja puhtam. Rõhk on loetavusel ja kasutusmugavusel.
+Sündmuste käsitlemine:
+C#: Kasutab sündmuste käsitlemiseks delegaatide ja sündmuste kombinatsiooni.
+Java: Kasutab sündmuste käsitlemiseks liideseid ja kuulajaid.
+Mitmene pärimine:
+C#: Toetab liideste kaudu mitut pärimist. Klass võib rakendada mitut liidest, kuid see võib pärida ainult ühest klassist.
+Java: sama.
+Erindite käsitlemine:
+C#: Erandid jagunevad kontrollitud ja kontrollimata eranditeks.
+Java: Kõik erandid on kontrollimata, kuid tal on kontrollitud erandite kontseptsioon, mis on sunduslik kompileerimise ajal.
+Laiendusmeetodid:
+C#: Võimaldab luua laiendusmeetodeid, mis võimaldavad arendajatel lisada uusi meetodeid olemasolevatele tüüpidele ilma neid muutmata.
+Java: Puudub otsene tugi laiendusmeetoditele, ehkki sarnast funktsionaalsust saab saavutada staatiliste abimeetoditega.
+
+C VS C#:
+Üks suurimaid erinevusi C# ja C vahel puudutab nende süntaksi. C süntaks keskendub madalal tasemel programmeerimise konstruktsioonidele, samas kui C# süntaks paneb suuremat rõhku objektorienteeritud kontseptsioonidele ja põhimõtetele.
+C on oma olemuselt protseduuriline programmeerimiskeel, mis viitab selle samm-sammulisele, “ülalt alla” programmeerimismeetodile. C kasutab funktsioone – või protseduure –, mis kutsutakse kindlas järjestuses tulemuse saavutamiseks. See ülalt-alla programmeerimislähenemine lagundab probleemi, küsimuse või ülesande väiksemateks ülesanneteks, mida seejärel “lahendatakse”, töötades põhiprobleemist allapoole selle väiksemate probleemide poole. 
+C# seevastu on objektorienteeritud programmeerimiskeel (OOP). See tähendab, et C# põhineb objektidel ja klassidel ning vanema-lapse-pärimise (parent-child-inheritance) põhimõttel. Objektid koosnevad nii andmetest kui ka käitumisest ning neid kasutatakse reaalse maailma asjade esindamiseks. Need objektid luuakse klassidest, mida võib mõelda objektide sinisilmeliseks kavandiks.
+
+JavaScript vs C#
+C# nõuab pistikprogrammi, JavaScript ei vaja.
+C# ei paku serveri-poolse skriptimise tuge, JavaScript pakub.
+C# on JavaScriptist keerulisem.
+Javascript on dünaamiliselt trükitud, samas kui C# on staatiline tüüp. Võrreldes C#-ga, tuleb vea parandamiseks või värskendamiseks uurida kogu JavaScripti koodi. C#-s on vigu lihtne tuvastada ja parandada.
+Kui kodeerija kasutab JavaScripti, pole programmis täiendavat tuge, mis aitaks koodi kiiremini teha. C# pakub automaatset täitmist ja dünaamilist tippimist, mis aitab tuvastada vigu ja kiirendada kodeerimist. C# võimaldab teil teha rohkem, kiiremini ja vähemate vigadega.
+Javascript töötab HTML-il baseeritud süntaksil - selle tõttu on ta süntaks keerulisem ja nõuab rohkem (tehnilist?) hooldust. C# töötab sisutiheda käsusüntaksiga, mida on lihtsam kasutada ja õppida.
+C# keerukamad omadused?
+C# on üldiselt loetav, kuid võib olla algajate jaoks veidi raske.  Seda just andmetüüpide, kontrollstruktuuride ja süntaksi reeglite tõttu.
+C# generics class - Generic klass on nagu kavand erinevate klasside loomiseks, mis töötavad erinevate andmetüüpidega nii, et ei oleks vajadust igale andmetüübile eraldi koodi kirjutamist. Üks näide on kui tahame teha klassi, kuhu saaks salvestada ja manipuleerida listi täis täisarve. Me saaks teha lihtsalt täisarvude jaoks klassi, kuid kui me tahame ka stringide või komakohtadega arvudega tööd teha, siis on kõige mõtekam kasutada generic klassi. 
+C# await operaator  - Kui meil on mingi ülesanne, mis võib kauem aega võtta - nt. mingist veebilehest andmete sisselugemine (või ka discist faili lugemine) siis saab “await”-iga anda programmile käsk edasi minna ja samal ajal teiste asjadega tegeleda.  
+
+Kasutatavate teekide eripära? 
+Newtonsoft.Json on populaarne teek, mida kasutatakse JSON-andmetega töötamiseks. See pakub JSON-iga töötamiseks võimsate tööriistade komplekti, sealhulgas JSON-andmete serialiseerimist ja deserialiseerimist C#-objektidele ja objektidest. 
+
+Entity Framework on objektide relatsioonikaardistaja, mis võimaldab arendajatel töötada relatsiooniandmebaasidega, kasutades C# objekte. See pakub komplekti tööriistu andmebaaside loomiseks, päringute tegemiseks ja värskendamiseks koodi abil. Seda kasutatakse laialdaselt ettevõtte tasemel rakendustes ja see pakub tugevat funktsioonide komplekti andmete haldamiseks C#-rakenduses.
+
+SignalR on reaalajas suhtlusteek, mis võimaldab arendajatel luua C# abil reaalajas veebirakendusi. See pakub tööriistade komplekti reaalajas veebirakenduste loomiseks, sealhulgas serveripoolsed jaoturi API-d ja kliendipoolsed JavaScripti API-d. Seda kasutatakse laialdaselt vestlusrakenduste, võrgumängude ja muude reaalajas veebirakenduste loomiseks.
+
+Dapper on lihtne ja kiire objektide kaardistaja .NET-i jaoks. See pakub tööriistakomplekti C#-rakenduses andmetega töötamiseks, sealhulgas SQL-päringute vastendamiseks C#-objektidega. Kuna Dapper on kerge ja hõlbsasti kasutatav on see arendajatele populaarne valik andmetega töötamiseks. 
+
+NLog on paindlik ja hõlpsasti kasutatav logimisteek .NET-i jaoks. See pakub tööriistakomplekti sõnumite ja vigade logimiseks C#-rakenduses. See on hästi konfigureeritav ja pakub tugevat funktsioonide komplekti C#-rakenduses logimise haldamiseks.
+AutoMapper on populaarne objektidevahelise kaardistamise teek .NET-i jaoks. See pakub tööriistakomplekti C# objektide vastendamiseks teiste C# objektidega. 
+
+Castle Windsor on .NET-i juhtimise (IoC) konteineri inversioon. See pakub tööriistade komplekti sõltuvuste haldamiseks C#-rakenduses. 
