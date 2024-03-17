@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c182c10032cf945bdb4188bf9ac61e04
+guid: 65d5065c4b40680438122bb67d795506
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4534872430750550929
-    second: start-button_0
+      213: -2776252739768706261
+    second: blcok_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: start-button_0
+      name: blcok_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 147
-        width: 512
-        height: 218
+        y: 0
+        width: 217
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f64b66f0d85e011c0800000000000000
-      internalID: -4534872430750550929
+      spriteID: b2b9167a7d4c879d0800000000000000
+      internalID: -2776252739768706261
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      start-button_0: -4534872430750550929
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
