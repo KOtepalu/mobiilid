@@ -1,0 +1,37 @@
+Esimese asjana hakkasime tutvuma erinevate android mobiilimängude UI ja main menu lahendustega, et saada natukene inspiratsiooni ja ideid. 
+Tegime terve grupiga koosoleku ja arutasime, et tahame teha mingit endless running mängu. Samuti vaatasime erinevaid õpetusi, et kuidas üldse pihta hakata. 
+Tegime ka ära vajalikud toimingud, et saada Unity korrektselt GitHubiga toimima, et saaks mugavalt ja õigesti GitHub desktopis pushida ja pullida. Panime Unity vaate 2 by 3 peale, mis tegi töö efektiivseks ja mugavaks. 
+Ja preview panime 16:9 Portrait peale, et näeksime, milline telefonis see välja näeb. 
+
+Main vaade:
+
+Lõime Assets alla Sprites kausta, kuhu paneme mängu erinevad graafilised objektid ja animatsioonid. Scenes alla lõime uue scene nimega main menu. 
+Sample scene nimetasime ümber Game’iks. Build settings alt tuli ka valida mõlemad scened kuvama. Hakkasime main menu scenega tegelema.
+Esimesena hakkasime mõtlema main menu ja üleüldse kasutajaliidese kujunduse peale. Pilditöötlustarkvaras tegime valmis nii start game kui ka exit game nupud. 
+Unitys lisasime UI elementide hulgast kaks nuppu, ühest tegime start nupu ja teisest exit nupu. Paigutasime nupud ekraanile ära. Nuppude lisamine keeruline otseselt ei olnud. 
+Kuid nendele oli vaja panna ka on click funktsioonid ja selleks oli vaja funktsioonide scriptid kirjutada, mis oli juba natukene keerulisem. 
+Nägime internetis erinevaid variante, kuidas scripte lisada aga otsustasime teha nii, et lisame Main Camera alla scripti elemendi. 
+Lõime scripti nimega main menu ja sinna lisasime kaks public methodit PlayGame ja QuitGame. PlayGames ütlesime, et Game scene peab avanema kui see funktsioon läheb tööle. 
+QuitGames, et rakendus peab sulgema kui see funktsioon käima läheb. Siis pidime mõlemale nupule õige asja on clicki juurde panema. 
+Alguses oli probleem, et vajalikud funktsioonid ei tekkinud valikusse, kuid siis avastasime scripti koodis väikse vea, parandasime selle ära ja siis ilmusid ka need valikusse. 
+Saime mõlemad nupud tööle. Siis lisasime main menu vaatele UI elementide hulgast paneli, mida kasutasime backgroundi jaoks. Lohistasime selle kõige üles, et taust ilusti nuppude taga kuvaks. 
+Taustaks panime ühe pildi. Edasi hakkasime tegelema Game scenega.
+		
+Game vaade:
+
+
+Otsisime Sprite’sid, mida kasutada mängija ja takistuste jaoks. Leidsime hetkel algelised kohatäitjad ning tegime neile vajalikud muudatused (tegime tausta läbipaistvaks, muutsime suurust jne). 
+Lõpuks jäid meil pall ehk Player ja kast ehk Block. Lõime veel ka lisakausta Prefabs, kuhu hiljem panime Blocki prefabi, et seda korduvalt kasutada.
+
+Proovisime erinevaid komponente objektide vahel, saime aru, et mingi asi peab nö maa/ground ka olema, et ülalt tulev takistust ei lööks palli ehk mängijat ekraanilt minema. 
+Panime groundi ja lisasime sellele Draw Mode’iks “Tiled”. 
+Tegime block objekti prefabiks, et seda saaks mitu korda kasutada
+Kirjutasime Blocki jaoks scripti, mis hävitab Blocki, kui see ekraanil piiridest välja kukub. 
+Läbivalt tekitas probleeme see, et osad asjad kirjutasime suurte algustähtedega ja osad väikestega. 
+Kirjutasime palli jaoks scripti, et seda liigutada saaks paremale ja vasakule hiire või näpuvajutusega.
+Paigutasime mõlema ekraani servale takistavad seinad, et pall ei saaks ekraanilt välja liikuda.
+Kirjutasime koodi, et blockid korduvalt ekraani piires kukuks. 
+Panime spawn pointi, et blockid saaksid kukkuda juhuslikult ekraani piires. Määrasime ka, et mis vahemikus blockid kukkuda tohivad ja millest üle minna ei tohi.
+Tegime gamemanager scripti, mis teeb, et block respawniks ekraanil erinevatest kohtadest. 
+Tuli probleem et block ei respawni, tegelesime sellega üli kaua ja randomize ei tööta, saime tööle - prefab polnud kuvatud, kuvasime hoopis algset blocki objekti. 
+Proovisime tööle saada ka juhu, kui block puutub mängijaga kokku. Tahtsime, et vaade läheks tagasi main menule, kuid hetkel seda ei saanud tööle. Jäi nii, et ekraanile vajutades hakkavad uuesti blockid kukkuma.

@@ -34,8 +34,52 @@ Laiendusmeetodid:
 C#: Võimaldab luua laiendusmeetodeid, mis võimaldavad arendajatel lisada uusi meetodeid olemasolevatele tüüpidele ilma neid muutmata.
 Java: Puudub otsene tugi laiendusmeetoditele, ehkki sarnast funktsionaalsust saab saavutada staatiliste abimeetoditega.
 
+Java:
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+C#:
+using System;
+
+class HelloWorld {
+    static void Main() {
+        Console.WriteLine("Hello, World!");
+    }
+}
+
+C#:
+public async Task<string> GetDataAsync() {
+    HttpClient client = new HttpClient();
+    string result = await client.GetStringAsync("https://example.com");
+    return result;
+}
+
+Java:
+public CompletableFuture<String> getDataAsync() {
+    HttpClient client = HttpClient.newHttpClient();
+    return client.sendAsync(HttpRequest.newBuilder(URI.create("https://example.com")).build(), HttpResponse.BodyHandlers.ofString())
+            .thenApply(HttpResponse::body);
+}
+
 C VS C#:
 Üks suurimaid erinevusi C# ja C vahel puudutab nende süntaksi. C süntaks keskendub madalal tasemel programmeerimise konstruktsioonidele, samas kui C# süntaks paneb suuremat rõhku objektorienteeritud kontseptsioonidele ja põhimõtetele.
+C:
+int num;
+float price;
+
+C#:
+var num = 0;
+float price = 0.0f;
+
+C:
+char str[] = "Hello, World!!";
+
+C#:
+string str = "Hello, World!";
+
 C on oma olemuselt protseduuriline programmeerimiskeel, mis viitab selle samm-sammulisele, “ülalt alla” programmeerimismeetodile. C kasutab funktsioone – või protseduure –, mis kutsutakse kindlas järjestuses tulemuse saavutamiseks. See ülalt-alla programmeerimislähenemine lagundab probleemi, küsimuse või ülesande väiksemateks ülesanneteks, mida seejärel “lahendatakse”, töötades põhiprobleemist allapoole selle väiksemate probleemide poole. 
 C# seevastu on objektorienteeritud programmeerimiskeel (OOP). See tähendab, et C# põhineb objektidel ja klassidel ning vanema-lapse-pärimise (parent-child-inheritance) põhimõttel. Objektid koosnevad nii andmetest kui ka käitumisest ning neid kasutatakse reaalse maailma asjade esindamiseks. Need objektid luuakse klassidest, mida võib mõelda objektide sinisilmeliseks kavandiks.
 
@@ -46,10 +90,59 @@ C# on JavaScriptist keerulisem.
 Javascript on dünaamiliselt trükitud, samas kui C# on staatiline tüüp. Võrreldes C#-ga, tuleb vea parandamiseks või värskendamiseks uurida kogu JavaScripti koodi. C#-s on vigu lihtne tuvastada ja parandada.
 Kui kodeerija kasutab JavaScripti, pole programmis täiendavat tuge, mis aitaks koodi kiiremini teha. C# pakub automaatset täitmist ja dünaamilist tippimist, mis aitab tuvastada vigu ja kiirendada kodeerimist. C# võimaldab teil teha rohkem, kiiremini ja vähemate vigadega.
 Javascript töötab HTML-il baseeritud süntaksil - selle tõttu on ta süntaks keerulisem ja nõuab rohkem (tehnilist?) hooldust. C# töötab sisutiheda käsusüntaksiga, mida on lihtsam kasutada ja õppida.
+
+Javascript:
+// Prototypal Inheritance
+function Person(name) {
+    this.name = name;
+}
+Person.prototype.greet = function() {
+    console.log("Hello, my name is " + this.name);
+}
+
+let person1 = new Person("Alice");
+person1.greet();
+
+C#:
+// Class-based Inheritance
+class Person {
+    public string Name { get; set; }
+    public Person(string name) {
+        Name = name;
+    }
+    public void Greet() {
+        Console.WriteLine("Hello, my name is " + Name);
+    }
+}
+
+Person person1 = new Person("Alice");
+person1.Greet();
+
 C# keerukamad omadused?
 C# on üldiselt loetav, kuid võib olla algajate jaoks veidi raske.  Seda just andmetüüpide, kontrollstruktuuride ja süntaksi reeglite tõttu.
+
 C# generics class - Generic klass on nagu kavand erinevate klasside loomiseks, mis töötavad erinevate andmetüüpidega nii, et ei oleks vajadust igale andmetüübile eraldi koodi kirjutamist. Üks näide on kui tahame teha klassi, kuhu saaks salvestada ja manipuleerida listi täis täisarve. Me saaks teha lihtsalt täisarvude jaoks klassi, kuid kui me tahame ka stringide või komakohtadega arvudega tööd teha, siis on kõige mõtekam kasutada generic klassi. 
+
+MyGenericClass<int> intInstance = new MyGenericClass<int>(10);
+MyGenericClass<string> stringInstance = new MyGenericClass<string>("Hello");
+
 C# await operaator  - Kui meil on mingi ülesanne, mis võib kauem aega võtta - nt. mingist veebilehest andmete sisselugemine (või ka discist faili lugemine) siis saab “await”-iga anda programmile käsk edasi minna ja samal ajal teiste asjadega tegeleda.  
+
+async Task Main(){
+  Console.WriteLine("Starting task...");
+
+  //Start a task that takes some time
+  await DoSomethingAsync();
+
+  Console.WriteLine("Task completed!");
+}
+
+async Task DoSomethingAsync(){
+  //Simulate waiting for something to happen
+  await Task.Delay(200); //This represents some time-cnosuming task
+
+  Console.WriteLine("Task finished!");
+}
 
 Kasutatavate teekide eripära? 
 Newtonsoft.Json on populaarne teek, mida kasutatakse JSON-andmetega töötamiseks. See pakub JSON-iga töötamiseks võimsate tööriistade komplekti, sealhulgas JSON-andmete serialiseerimist ja deserialiseerimist C#-objektidele ja objektidest. 
