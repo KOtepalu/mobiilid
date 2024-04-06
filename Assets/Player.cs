@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
         //If collides with the player it will reload the block
         if(collision.gameObject.tag == "block")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Game");
         }
     }
 
