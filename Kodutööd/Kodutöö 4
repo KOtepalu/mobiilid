@@ -1,0 +1,11 @@
+Andurite kasutamine
+
+Tahtsime proovida oma mängust teha nn kallutamisega mängu. Lõime uue Scene GameTilt ja lisasime nupu avalehele, mis võimaldaks seda mängida. Hetkel on avalehel kaks play nuppu, kuna UI-le väga ei jõudnud keskenduda, alumisele play nupule vajutades saab mängida Tilt mängu. 
+Peale uue Scene'i GameTilt loomist, kopeerisime kõik olemasolevad elemendid Game alt GameTilt alla, kuid muutsime Playeri ära PlayerTilt'iks, sest teadsime, et nende scriptid peavad olema erinevad. PlayerTilt scriptis defineerisime tiltSpeedi, mis jäi tegelikult samaks mis moveSpeed tavalises playeris. 
+Update() funktsiooni alla defineerisime nii tiltXInputi kui ka tiltYInputi, mis tähistavad siis vastavalt telefonist tulevaid X ja Y koordinaate. Input.acceleration annab juurdepääsu seadme kallutamisele antud telgede suunas. 
+If-lause kontrollib, kas kallutamise sisend on väiksem kui 0.1 (nii positiivne kui ka negatiivne). Kui on siis väljume meetodist ja mängija jääb paigale. 
+Kui kallutamise sisend on aga suurem kui 0.1, siis  luuakse uus 2D vektor nimega movement. Selle vektori esimene komponent on tiltInput, mis on kallutamise sisendi väärtus. 
+Teine komponent on fikseeritud väärtus 0, kuna soovime, et mängija liiguks ainult x-teljel. Kui telefon kallutatakse paremale või vasakule, on tiltInput väärtus vastavalt positiivne või negatiivne, liigutades mängijat x-teljel vastavas suunas. 
+transform.Translate() meetod liigutab mängija vastavalt antud vektorile. 
+Time.deltaTime on ajaühik, mis näitab möödunud aega ühe kaadri vahel ja tagab sujuva liikumise.
+Lisasime debugimise logi, et näidata reaalajas, kuidas x ja y koordinaatide väärtused tulevad. 
