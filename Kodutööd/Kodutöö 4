@@ -9,3 +9,5 @@ Teine komponent on fikseeritud väärtus 0, kuna soovime, et mängija liiguks ai
 transform.Translate() meetod liigutab mängija vastavalt antud vektorile. 
 Time.deltaTime on ajaühik, mis näitab möödunud aega ühe kaadri vahel ja tagab sujuva liikumise.
 Lisasime debugimise logi, et näidata reaalajas, kuidas x ja y koordinaatide väärtused tulevad. 
+
+Kodutöös osalesid kõik.
