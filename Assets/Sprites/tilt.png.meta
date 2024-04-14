@@ -191,7 +191,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tilt_0: -8110819255980034783
+      tilt_1: -7876836694922306588
+      tilt_2: 8919406398186900339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

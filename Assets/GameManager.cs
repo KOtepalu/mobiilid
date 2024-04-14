@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
         {
             StartSpawning();
             gameStarted = true;
+            ScoreManager.scoreCount = 0;
         }
     }
 

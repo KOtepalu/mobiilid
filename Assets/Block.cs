@@ -10,6 +10,7 @@ public class Block : MonoBehaviour
     {
         if(transform.position.y < -6f) {
             Destroy(gameObject);
+            ScoreManager.scoreCount += 1;
         }
     }
 }
