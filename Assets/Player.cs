@@ -8,10 +8,15 @@ public class Player : MonoBehaviour
 
     public float moveSpeed;
     Rigidbody2D rb;
+    public Timer timer;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        timer = FindObjectOfType<Timer>();
+
     }
 
     // Update is called once per frame
@@ -42,6 +47,15 @@ public class Player : MonoBehaviour
         //If collides with the player it will reload the block
         if(collision.gameObject.tag == "block")
         {
+            Debug.Log("Collision detected with block");
+
+            if (timer != null)
+            {
+                Debug.Log("Recording end time...");
+                timer.RecordEndTime();
+                Debug.Log("End time recorded");
+            }
+
             SceneManager.LoadScene("Game");
         }
     }
