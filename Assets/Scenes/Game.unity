@@ -927,6 +927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  timer: {fileID: 0}
 --- !u!1 &1987136065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5119178150133215494, guid: e470dd32f5d657b449a92ca721e55fe1, type: 3}
