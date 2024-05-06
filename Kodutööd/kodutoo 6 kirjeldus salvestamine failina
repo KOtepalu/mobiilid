@@ -1,0 +1,19 @@
+Lõime uued koodi failid: DataManager.cs, Timer.cs.
+Uuendasime koode: Player.cs, ScoreManager.cs
+
+DataManager.cs haldab mänguskoori salvestamist ja laadimist failidest. Kirjutasime meetodi, mis kõigepealt teisendab skoori tekstiks (ToString() meetodi abil) 
+ja seejärel võimaldab väärtusi salvestada faili ja uuendada vastavalt mängu tulemusele. Võtab sisendiks stringi kujul high score’i /skoori ja faili nime, kuhu 
+see salvestatakse.
+
+Meetod kasutab Application.persistentDataPath omadust Unitys, mis tagastab tee kausta, kuhu rakendus saab salvestada andmeid, mis püsivad ka pärast rakenduse 
+sulgemist ja uuesti avamist. Et leida, kuhu täpsemalt rakendus salvestas neid andmeid, printisime välja debug.log()’iga selle Pathi.
+
+Teine tehtud meetod LoadData() võimaldab see andmeid failist ka lugeda moodustades taaskord failitee ning kontrollib vajaliku faili olemasolu ning tagastab 
+failis olevad andmed.
+
+Timer.cs haldab mängimise aja salvestamist ja laadimist failidest. Kood määrab mängu algusaja, salvestades aja, mil mäng algas, samuti lõpuaja, mis on siis 
+kui mängija plokiga kokku põrkab. Lõpuaeg salvestatakse faili, teisendades selle tekstiks, et seda saaks tekstifaili kirjutada.
+
+Player.cs koodi lisasime lõigud, mis käivitavad mängu taimeri ning ka salvestab tulemuse, kui mängija on plokiga kokku põrkunud.
+
+ScoreManager.cs koodi muutsime lõigud, mis leiavad high score’i.
