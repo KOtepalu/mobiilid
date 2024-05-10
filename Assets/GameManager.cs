@@ -16,11 +16,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && !gameStarted ) 
+        if (Input.GetMouseButtonDown(0) && !gameStarted)
         {
             StartSpawning();
             gameStarted = true;
             ScoreManager.scoreCount = 0;
+
+            Debug.Log("Game Started");
         }
     }
 

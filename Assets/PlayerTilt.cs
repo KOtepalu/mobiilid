@@ -30,9 +30,12 @@ public class PlayerTilt : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Kui põrkab kokku blockiga, siis peab uuesti laadima selle scene et mäng uuesti hakkaks
-        if(collision.gameObject.tag == "block")
+        if (collision.gameObject.CompareTag("block"))
         {
-            SceneManager.LoadScene("GameTilt");
+            Debug.Log("Collision detected with block");
+
+            // Trigger the scene transition to "GameOver"
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

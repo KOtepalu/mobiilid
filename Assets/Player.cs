@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //If collides with the player it will reload the block
-        if(collision.gameObject.tag == "block")
+        if (collision.gameObject.CompareTag("block"))
         {
             Debug.Log("Collision detected with block");
 
@@ -56,7 +56,8 @@ public class Player : MonoBehaviour
                 Debug.Log("End time recorded");
             }
 
-            SceneManager.LoadScene("Game");
+            // Trigger the scene transition to "GameOver"
+            SceneManager.LoadScene("GameOver");
         }
     }
 
