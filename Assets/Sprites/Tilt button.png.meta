@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 723493e3ec040e44cb3951f50665db49
+guid: d5bb6fb7be8ac49648ba8d8b6220bf12
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2905968664833990922
-    second: Replay button_0
+      213: 8935674848221460587
+    second: Tilt button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Replay button_0
+      name: Tilt button_0
       rect:
         serializedVersion: 2
         x: 0
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6fe572455eceba7d0800000000000000
-      internalID: -2905968664833990922
+      spriteID: b68f1a46ee4e10c70800000000000000
+      internalID: 8935674848221460587
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Replay button_0: -2905968664833990922
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
