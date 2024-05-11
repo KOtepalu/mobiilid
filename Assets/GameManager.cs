@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -13,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     bool gameStarted = false;
 
+    public GameObject tapText;
+
     // Update is called once per frame
     void Update()
     {
@@ -20,6 +23,7 @@ public class GameManager : MonoBehaviour
         {
             StartSpawning();
             gameStarted = true;
+            tapText.SetActive(false);
             ScoreManager.scoreCount = 0;
 
             Debug.Log("Game Started");

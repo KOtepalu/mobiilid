@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerTilt : MonoBehaviour
 {
     public float tiltSpeed;
+    
 
     void Update()
     {

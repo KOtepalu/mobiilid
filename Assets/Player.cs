@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
         {
             rb.velocity = Vector2.zero; //not tapping on the screen, then 0
         }
+        
+
     }
 
 

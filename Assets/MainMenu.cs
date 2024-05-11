@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame() {
-        SceneManager.LoadSceneAsync("Game"); // Käivitab olemasoleva mängu stseeni
+        PlayerPrefs.SetString("VisitedGame", "true");
+
+        SceneManager.LoadSceneAsync("Game"); 
     }
 
     public void PlayTiltGame() {
+        PlayerPrefs.SetString("VisitedGameTilt", "true");
+
         SceneManager.LoadSceneAsync("GameTilt"); // Laeb sisse tilt-mängu stseeni
     }
 
