@@ -88,3 +88,8 @@ MainMenu.cs - määrab millist mängu alustatakse, kas “Game” või “GameTi
 Player.cs – liigutab mängijat vastavalt ekraani puudutusele, kas vasakule või paremale, kui mängija puutub kokku takistusega, siis lõpetab mängu ja liigub uuele stseenile “GameOver”
 PlayerTilt.cs – liigutab mängijat vastavalt kallutusele, kas vasakule või paremale, kui mängija puutub kokku takistusega, siis lõpetab mängu ja liigub uuele stseenile “GameOver”
 ScoreManager.cs – esimesel korral uuel seadmel mängides salvestab saadud skoori  ka high score’ina, uuesti mängides salvestab skoori, kui see on parem kui senine kõrgeim tulemus uuendab high score, kutsub esile score ja high score näitamise mängu ajal ning nende uuendamise
+
+Mängu mobiili kuvatõmmised:
+![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis.jpg)
+
+
