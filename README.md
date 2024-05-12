@@ -90,9 +90,9 @@ PlayerTilt.cs – liigutab mängijat vastavalt kallutusele, kas vasakule või pa
 ScoreManager.cs – esimesel korral uuel seadmel mängides salvestab saadud skoori  ka high score’ina, uuesti mängides salvestab skoori, kui see on parem kui senine kõrgeim tulemus uuendab high score, kutsub esile score ja high score näitamise mängu ajal ning nende uuendamise
 
 Mängu mobiili kuvatõmmised:
-![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis.jpg | width=50)
-![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis1.jpg | width=50)
-![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis2.jpg | width=50)
-![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis3.jpg | width=50)
+![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis.jpg)
+![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis1.jpg)
+![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis2.jpg)
+![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis3.jpg)
 
 
