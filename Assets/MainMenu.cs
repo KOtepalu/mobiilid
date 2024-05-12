@@ -5,17 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame() {
-        PlayerPrefs.SetString("VisitedGame", "true");
-
-        SceneManager.LoadSceneAsync("Game"); 
+    public void PlayGame()
+    {
+        PlayerPrefs.SetString("LastVisitedGame", "Game");
+        SceneManager.LoadSceneAsync("Game");
     }
 
-    public void PlayTiltGame() {
-        PlayerPrefs.SetString("VisitedGameTilt", "true");
-
-        SceneManager.LoadSceneAsync("GameTilt"); // Laeb sisse tilt-mängu stseeni
+    public void PlayTiltGame()
+    {
+        PlayerPrefs.SetString("LastVisitedGame", "GameTilt");
+        SceneManager.LoadSceneAsync("GameTilt");
     }
+
 
     public void QuitGame() {
         Application.Quit();

@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        Debug.Log("Player script initialized successfully!");
         timer = FindObjectOfType<Timer>();
 
     }
@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
+            Debug.Log("Mouse button pressed, applying force");
+
             Vector3 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if(touchPos.x < 0)
@@ -59,6 +61,8 @@ public class Player : MonoBehaviour
             }
 
             // Trigger the scene transition to "GameOver"
+            rb.velocity = Vector2.zero;
+
             SceneManager.LoadScene("GameOver");
         }
     }
