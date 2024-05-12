@@ -91,5 +91,8 @@ ScoreManager.cs – esimesel korral uuel seadmel mängides salvestab saadud skoo
 
 Mängu mobiili kuvatõmmised:
 ![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis.jpg)
+![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis1.jpg)
+![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis2.jpg)
+![](https://github.com/KOtepalu/mobiilid/blob/main/Mobiilikuvatommis3.jpg)
 
 
