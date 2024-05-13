@@ -3,11 +3,11 @@
 Grupp 6 - Unity Hub
 
 Autorid: 
-Karl Otepalu
-Annabel Väljaots
-Isabella Pebsen
-Katriin Liselle Eenmaa
-Annika Rohtmets
+Karl Otepalu,
+Annabel Väljaots,
+Isabella Pebsen,
+Katriin Liselle Eenmaa,
+Annika Rohtmets,
 Merette Arula
 
 Projekti idee:
